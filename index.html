@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Портфоліо</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f0f0f0;
+      color: #333;
+    }
+
+    header {
+      background-color: #000;
+      color: white;
+      padding: 30px 0;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 20px;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    section {
+      padding: 50px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .project {
+      background: white;
+      padding: 30px;
+      margin: 30px 0;
+      border-left: 6px solid #0066cc;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .project:hover {
+      transform: scale(1.01);
+    }
+
+    .link-button {
+      padding: 12px 25px;
+      background-color: #0066cc;
+      color: white;
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 4px;
+      display: inline-block;
+      margin-top: 15px;
+      transition: background-color 0.3s ease;
+    }
+
+    .link-button:hover {
+      background-color: #004c99;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      background-color: #111;
+      color: white;
+    }
+
+    button {
+      padding: 12px 25px;
+      background-color: #0066cc;
+      border: none;
+      color: white;
+      border-radius: 4px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #004c99;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Моє Портфоліо</h1>
+    <nav>
+      <a href="#about">Про мене</a>
+      <a href="#projects">Проєкти</a>
+      <a href="#contact">Контакти</a>
+    </nav>
+  </header>
+
+  <section id="about">
+    <h2>Про мене</h2>
+    <p>Привіт! Я веб-розробник з України. Створюю сучасні сайти з адаптивним дизайном і зручним інтерфейсом.</p>
+  </section>
+
+  <section id="projects">
+    <h2>Мої проєкти</h2>
+
+    <div class="project">
+      <h3>Сайт магазину у стилі BMW</h3>
+      <p>Сучасний інтерфейс магазину з акцентом на стиль, продуктивність і користувацький досвід.</p>
+      <a class="link-button" href="" target="_blank">Перейти на сайт</a>
+    </div>
+
+    <div class="project">
+      <h3>Портфоліо</h3>
+      <p>Цей сайт — приклад мого портфоліо. Ви вже на ньому!</p>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Зв'язок зі мною</h2>
+    <p>Email: example@gmail.com</p>
+    <p>Телефон: +380 123 456 789</p>
+    <button onclick="showThanks()">Написати повідомлення</button>
+  </section>
+
+  <footer>
+    &copy; 2025 Моє Ім’я. Всі права захищено.
+  </footer>
+
+  <script>
+    function showThanks() {
+      alert("Дякую за ваше повідомлення! Я зв'яжусь з вами найближчим часом.");
+    }
+  </script>
+
+</body>
+</html>
+>
